@@ -11,17 +11,21 @@
 
 </html>
 <!-- پروژه قسمت هدر -->
-
-<body class="overflow-x-hidden">
-  <header class=" bg-[#0A490A] h-40 ">
-    <div class="container mx-auto flex items-center justify-between">
-      <div class="flex items-center space-x-4 md:space-x-6 mt-[-50px]">
-        <h1 class="text-white font-bold text-3xl ">FOODMART</h1>
-        <h2 class="text-white text-2xl font-bold ms-11">Home</h2>
-        <h3 class="text-white font-medium ">Fruit</h3>
-        <h4 class="text-white font-medium ">Vegetable</h4>
-        <!-- بخش جستجوسايت درسربرگ منوابتدايی پروژه -->
-        <div class="flex items-center justify-center p-5 ms-30  ">
+  <body class="overflow-x-hidden">
+    <header class="bg-[#0A490A]  py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between h-full">
+          <!-- لوگو و منوی اصلی -->
+          <div class="flex items-center space-x-6 mb-4 md:mb-0">
+            <h1 class="text-white font-bold text-3xl">FOODMART</h1>
+            <nav class="hidden md:flex items-center space-x-6">
+              <a href="#" class="text-white text-lg font-bold hover:text-[#FFC107] transition">Home</a>
+              <a href="#" class="text-white text-lg hover:text-[#FFC107] transition">Fruit</a>
+              <a href="#" class="text-white text-lg hover:text-[#FFC107] transition">Vegetable</a>
+            </nav>
+          </div>
+          <!-- بخش جستجو -->
+      <div class="flex items-center justify-center p-5 ms-30  ">
           <div class="flex">
             <div class="flex  items-center justify-center text-white border">
               <img src="/assets/images/Vector (2).png" alt="" class="h-10">
@@ -33,58 +37,76 @@
               <option value="">All Categories</option>
             </select>
           </div>
-        </div>
-        <!-- بخش سمت پروفایل سربرگ -->
-        <div class="flex justify-center ms-70 mt-20 gap-5 text-center text-white ">
-          <div class="flex-col">
-            <img src="assets/images/Group (3).png" alt="">
-            <p class="mb-30 ">Profile</p>
-          </div>
-          <div class="flex-col items-end">
-            <img src="/assets/images/har.png" alt="">
-            <p>Wishlist</p>
-
-          </div>
-          <div class="flex-col">
-            <img src="/assets/images/sa.png" alt="">
-            <p>My Cart</p>
+       </div> 
+  
+          <!-- بخش آیکون های کاربر -->
+          <div class="flex items-center space-x-6">
+            <div class="flex flex-col items-center">
+              <img src="assets/images/Group (3).png" alt="Profile" class="h-6 w-6 mb-1">
+              <span class="text-white text-sm">Profile</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="/assets/images/har.png" alt="Wishlist" class="h-6 w-6 mb-1">
+              <span class="text-white text-sm">Wishlist</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="/assets/images/sa.png" alt="Cart" class="h-6 w-6 mb-1">
+              <span class="text-white text-sm">My Cart</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </body>
   </div>
   <!-- بخش وسط پروژه قسمت زردرنگ -->
-  <main class=" bg-[#FFC107] px-6 py-8 ">
-    <!-- بخش عکس ابتدایی پروژه -->
-    <div class="container mx-auto  flex flex-col items-end p-7 lg-flex-row lg:mb-0">
-      <img class="rounded-xl lg:top-24 xl-top-0 h-96 w-xl"
-        src="/assets/images/0add2098-7fbb-4bd6-906d-68d7bfe42897 1.png" alt="">
-    </div>
-
-    <div class="container mx-auto flex  flex-col md:flex-row items-center justify-between gap-4 mr-72 mt-[-45rem]">
-      <div class="flex flex-col items-center md:items-start order-2 md:order-1">
-        <!-- قسمت ستاره درصدپروژه -->
-        <div class="relative">
-          <img class="w-full h-auto mt-70 ms-30" src="/assets/images/Star 1.png" alt="">
-          <div class="absolute  top-96 left-56 text-center text-white p-2 font-bold text-4xl">
-            -20%
+      <main class="bg-[#FFC107] px-6 py-8">
+        <div class="container mx-auto">
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <!-- بخش متن در سمت چپ -->
+            <div class="lg:w-1/2 order-2 lg:order-1">
+              <!-- قسمت ستاره و درصد پروژه  -->
+              <div class="flex justify-end mb-8">
+                <div class="relative">
+                  <img class="w-32 h-32 mx-auto" src="/assets/images/Star 1.png" alt="ستاره">
+                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-4xl">
+                    -20%
+                  </div>
+                </div>
+              </div>
+              
+              <div class="text-left">
+                <button class="text-[#0A490A] bg-[#B4C8B1] px-4 py-2 rounded-full mb-8 mx-auto ms-7">
+                  Daily Discount
+                </button>
+                
+                <div class="text-left">
+                  <h1 class="text-[#0A490A] text-5xl ms-7  font-bold mb-4">Fruits  § <br>
+                    Vegetables </h1>
+                  <p class="text-[#0A490A] text-lg mb-6 ms-7">
+                    These superfoods are packed with vital nutrients, including vitamins <br>
+                    and minerals that can help keep you healthy. Plus, they're easy to <br>
+                    enjoy - just add water and let the magic happen!
+                  </p>
+                </div>
+              </div>
+              
+              <div class="text-left">
+                <button class="text-[#0A490A] bg-[#B4C8B1] font-bold px-8 ms-7 py-3 rounded hover:bg-blue-200 transition shadow-lg">
+                  View More >
+                </button>
+              </div>
+            </div>
+      
+            <!-- بخش تصویر در سمت راست -->
+            <div class="lg:w-1/2 order-1 lg:order-2">
+              <img class="rounded-xl w-full h-auto max-h-[600px] object-cover" 
+                   src="/assets/images/0add2098-7fbb-4bd6-906d-68d7bfe42897 1.png" 
+                   alt="Fruits and Vegetables">
+            </div>
           </div>
         </div>
-        <button class="text-green-800 bg-[#B4C8B1] px-2 py-1 rounded-4xl mb-10 mr-96 mt-[-14rem]">
-          Daily Discounti</button>
-        <div class="text-center md:text-left">
-          <h1 class="text-[#0A490A] text-4xl md:text-4xl font-bold mr-96">Fruits§<br>Vegetables</h1>
-          <p class="text-[#0A490A] texy-lg mr-[30rem] mt-5">These superfoods are packed with vital nutrients, including
-            vitamins <br>
-            and minerals that can help keep you health. Plus, they’re easy to <br>
-            enjoy-just add water and let the magic happen!</p>
-        </div>
-        <button
-          class="text-[#0A490A] bg-[#B4C8B1]  font-bold px-8 py-2 mr-96 mt-10 hover:bg-blue-200 transition shadow-lg">
-          View More > </button>
-      </div>
-
+      </main>
   </main>
   <!-- قسمت دوم پروژه بخش ميوه ها وسبزيجات -->
   <section>
@@ -218,242 +240,258 @@
             <div class="flex flex-row capitalize  md:flex-row items-center justify-between gap-4 mb-5 md:mb-12 mr-10">
               <h1 class="text-[#0A490A]  text-3xl md:text-4xl font-bold ">Love our Categories</h1>
               <button
-              class=" text-[#0A490A] bg-[#FFC107] px-6 py-2 rounded-3xl hover:bg-indigo-200 transition whitespace-nowrap font-bold">
-              Show more > </button>
+                class=" text-[#0A490A] bg-[#FFC107] px-6 py-2 rounded-3xl hover:bg-indigo-200 transition whitespace-nowrap font-bold">
+                Show more > </button>
             </div>
           </div>
-        
-      <div class="container mx-auto p-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- بخش سوم قسمت اول سيب ها -->
-          <div class="bg-white p-4 border rounded shadow-md">
-            <div class="flex justify-between items-start">
-              <img class="w-80 h-full ms-12 sm:ms-5 " src="/assets/images/apple1.png" alt="Apple">
-              <img class="mt-2 ms-10 h-full " src="/assets/images/🦆 icon _hurt_.png" alt="Favorite">
+
+          <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- بخش سوم قسمت اول سيب ها -->
+              <div class="bg-white p-4 border rounded shadow-md">
+                <div class="flex justify-between items-start">
+                  <img class="w-80 h-full ms-12 sm:ms-5 " src="/assets/images/apple1.png" alt="Apple">
+                  <img class="mt-2 ms-10 h-full " src="/assets/images/🦆 icon _hurt_.png" alt="Favorite">
+                </div>
+                <p class="text-[#0A490A] mt-4 lg:mt-20">Fruits</p>
+                <h5 class="text-lg font-bold text-[#0A490A]">Pomme</h5>
+                <div class="flex items-center mt-2">
+                  <img src="/assets/images/Frame 8.png" alt="Rating">
+                  <p class="ml-2">(1)</p>
+                </div>
+                <div class="flex items-center mt-2">
+                  <p class="text-xl text-green-600">175.00 DA</p>
+                  <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
+                  <div class="w-full lg:w-1/2">
+                    <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
+                    <select id="size"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                      <option>1 Kg</option>
+                    </select>
+                  </div>
+                  <div class="w-full lg:w-1/4">
+                    <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
+                    <input type="number" id="quantity" min="1" value="1"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                  </div>
+                </div>
+                <button
+                  class="text-[#0A490A] text-center mt-5 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+                  Add to Cart >
+                </button>
+              </div>
+
+              <!-- بخش سوم بخش نوشيدنی بروکلی -->
+              <div class="bg-white p-4 border rounded shadow-md">
+                <div class="flex justify-between items-start">
+                  <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/brokli.png" alt="Broccoli">
+                  <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_yellow.png" alt="Favorite">
+                </div>
+                <p class="text-[#0A490A] mt-4 lg:mt-20">Juices</p>
+                <h4 class="text-lg font-bold text-[#0A490A]">Brocoli Shake</h4>
+                <div class="flex items-center mt-2">
+                  <img src="/assets/images/Frame 8.png" alt="Rating">
+                  <p class="ml-2">(1)</p>
+                </div>
+                <div class="flex items-center mt-2">
+                  <p class="text-xl text-green-600">175.00 DA</p>
+                  <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
+                  <div class="w-full lg:w-1/2">
+                    <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
+                    <select id="size"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                      <option>1 Liter</option>
+                    </select>
+                  </div>
+                  <div class="w-full lg:w-1/4">
+                    <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
+                    <input type="number" id="quantity" min="1" value="1"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                  </div>
+                </div>
+                <button
+                  class="text-[#0A490A] text-center mt-3 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+                  Add to Cart >
+                </button>
+              </div>
+
+              <!-- بخش سوم قسمت سوم بخش دونات -->
+              <div class="bg-white p-4 border rounded shadow-md">
+                <div class="flex justify-between items-start">
+                  <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/donutes.png" alt="Donuts">
+                  <img class="w-6 h-6 mt-1" src="/assets/images/🦆 icon _hurt_.png" alt="Favorite">
+                </div>
+                <p class="text-[#0A490A] mt-8">Bakers</p>
+                <h2 class="text-lg font-bold text-[#0A490A]">Donuts</h2>
+                <div class="flex items-center mt-2">
+                  <img src="/assets/images/Frame 8.png" alt="Rating">
+                  <p class="ml-2">(1)</p>
+                </div>
+                <div class="flex items-center mt-2">
+                  <p class="text-xl text-green-600">175.00 DA</p>
+                  <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
+                  <div class="w-full lg:w-1/2">
+                    <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
+                    <select id="size"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                      <option>1 pics</option>
+                    </select>
+                  </div>
+                  <div class="w-full lg:w-1/4">
+                    <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
+                    <input type="number" id="quantity" min="1" value="1"
+                      class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                  </div>
+                </div>
+                <button
+                  class="text-[#0A490A] text-center mt-5 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+                  Add to Cart >
+                </button>
+              </div>
             </div>
-            <p class="text-[#0A490A] mt-4 lg:mt-20">Fruits</p>
-            <h5 class="text-lg font-bold text-[#0A490A]">Pomme</h5>
-            <div class="flex items-center mt-2">
-              <img src="/assets/images/Frame 8.png" alt="Rating">
-              <p class="ml-2">(1)</p>
+          </div>
+      </div>
+  </section>
+  <!-- بخش چهارم بخش سبزرنگ -->
+  <section class="bg-[#0A490A]">
+    <div class="container mx-auto px-4 py-8 md:py-12">
+      <!-- عنوان و دکمه -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-5 md:mb-12">
+        <h1 class="text-white text-3xl md:text-4xl font-bold text-center sm:text-right">Love our Categories</h1>
+        <button
+          class="text-[#0A490A] bg-[#FFC107] px-6 py-2 rounded-3xl hover:bg-indigo-200 transition font-bold whitespace-nowrap">
+          Show more >
+        </button>
+      </div>
+
+      <!-- منوی دسته‌بندی‌ها -->
+      <header class="overflow-x-auto pb-2">
+        <div class="container mx-auto flex items-center space-x-4 md:space-x-6 min-w-max">
+          <h1 class="text-[#FFC107] font-bold text-3xl whitespace-nowrap">All Categories</h1>
+          <h2 class="text-white font-bold whitespace-nowrap">Vegetables</h2>
+          <h3 class="text-white font-bold whitespace-nowrap">Fruits</h3>
+          <h4 class="text-white font-bold whitespace-nowrap">Juices</h4>
+          <h5 class="text-white font-bold whitespace-nowrap">Bakers</h5>
+        </div>
+      </header>
+
+
+      <main class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+          <!-- بخش چهارم قسمت اول سيب ها -->
+          <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md ">
+            <div class="flex justify-between items-start mt-3">
+              <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/apple1.png" alt="">
+              <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_white.png" alt="">
             </div>
-            <div class="flex items-center mt-2">
-              <p class="text-xl text-green-600">175.00 DA</p>
-              <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+            <p class="text-white mt-4 lg:mt-20 text-center lg:text-left  ">Fruits</p>
+            <h5 class="text-lg font-bold text-white text-center lg:text-left ">Pomme</h5>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <img src="/assets/images/Frame 18.png" alt="Rating">
+              <p class="text-white ml-2">(1)</p>
+            </div>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <p class="text-xl text-white">175.00 DA</p>
+              <p class="text-xl text-white line-through ml-2">240.00 DA</p>
             </div>
             <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
               <div class="w-full lg:w-1/2">
-                <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
-                <select id="size" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="size" class="block text-sm font-medium text-white">Size:</label>
+                <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
                   <option>1 Kg</option>
                 </select>
               </div>
               <div class="w-full lg:w-1/4">
-                <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
-                <input type="number" id="quantity" min="1" value="1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
+                <input type="number" id="quantity" min="1" value="1"
+                  class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
               </div>
             </div>
-            <button class="text-[#0A490A] text-center mt-5 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+            <button
+              class="text-white text-center mt-5 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
               Add to Cart >
             </button>
           </div>
-      
-           <!-- بخش سوم بخش نوشيدنی بروکلی -->
-          <div class="bg-white p-4 border rounded shadow-md">
+          <!-- بخش چهارم بخش نوشيدنی بروکلی -->
+          <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md">
             <div class="flex justify-between items-start">
-              <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/brokli.png" alt="Broccoli">
-              <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_yellow.png" alt="Favorite">
+              <img class="w-80 h-full  sm:ms-15" src="/assets/images/brokli.png" alt="">
+              <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_yellow.png" alt="">
             </div>
-            <p class="text-[#0A490A] mt-4 lg:mt-20">Juices</p>
-            <h4 class="text-lg font-bold text-[#0A490A]">Brocoli Shake</h4>
-            <div class="flex items-center mt-2">
-              <img src="/assets/images/Frame 8.png" alt="Rating">
-              <p class="ml-2">(1)</p>
+            <p class="text-white mt-4 lg:mt-20 text-center lg:text-left">Juices</p>
+            <h4 class="text-lg font-bold text-white text-center lg:text-left">Brocoli Shake</h4>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <img src="/assets/images/Frame 18.png" alt="Rating">
+              <p class="text-white ml-2">(1)</p>
             </div>
-            <div class="flex items-center mt-2">
-              <p class="text-xl text-green-600">175.00 DA</p>
-              <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <p class="text-xl text-white">175.00 DA</p>
+              <p class="text-xl text-white line-through ml-2">240.00 DA</p>
             </div>
             <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
               <div class="w-full lg:w-1/2">
-                <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
-                <select id="size" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="size" class="block text-sm font-medium text-white">Size:</label>
+                <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
                   <option>1 Liter</option>
                 </select>
               </div>
               <div class="w-full lg:w-1/4">
-                <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
-                <input type="number" id="quantity" min="1" value="1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
+                <input type="number" id="quantity" min="1" value="1"
+                  class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
               </div>
             </div>
-            <button class="text-[#0A490A] text-center mt-3 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+            <button
+              class="text-white text-center mt-6 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
               Add to Cart >
             </button>
           </div>
-      
-        <!-- بخش سوم قسمت سوم بخش دونات -->
-          <div class="bg-white p-4 border rounded shadow-md">
+
+          <!-- بخش چهارم قسمت سوم بخش دونات -->
+          <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md">
             <div class="flex justify-between items-start">
-              <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/donutes.png" alt="Donuts">
-              <img class="w-6 h-6 mt-1" src="/assets/images/🦆 icon _hurt_.png" alt="Favorite">
+              <img class="w-80 h-full ms-12 sm:ms-10" src="/assets/images/donutes.png" alt="">
+              <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_white.png" alt="">
             </div>
-            <p class="text-[#0A490A] mt-8">Bakers</p>
-            <h2 class="text-lg font-bold text-[#0A490A]">Donuts</h2>
-            <div class="flex items-center mt-2">
-              <img src="/assets/images/Frame 8.png" alt="Rating">
-              <p class="ml-2">(1)</p>
+            <p class="text-white mt-12  text-center lg:text-left">Bakers</p>
+            <h2 class="text-lg font-bold text-white  text-center lg:text-left">Donuts</h2>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <img src="/assets/images/Frame 18.png" alt="Rating">
+              <p class="text-white ml-2">(1)</p>
             </div>
-            <div class="flex items-center mt-2">
-              <p class="text-xl text-green-600">175.00 DA</p>
-              <p class="text-xl text-green-600 line-through ml-2">240.00 DA</p>
+            <div class="flex justify-center lg:justify-start items-center mt-2">
+              <p class="text-xl text-white">175.00 DA</p>
+              <p class="text-xl text-white line-through ml-2">240.00 DA</p>
             </div>
             <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
               <div class="w-full lg:w-1/2">
-                <label for="size" class="block text-sm font-medium text-gray-700">Size:</label>
-                <select id="size" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="size" class="block text-sm font-medium text-white">Size:</label>
+                <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
                   <option>1 pics</option>
                 </select>
               </div>
               <div class="w-full lg:w-1/4">
-                <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
-                <input type="number" id="quantity" min="1" value="1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500">
+                <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
+                <input type="number" id="quantity" min="1" value="1"
+                  class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
               </div>
             </div>
-            <button class="text-[#0A490A] text-center mt-5 bg-[#FFC107] w-full lg:w-[27rem] py-2 rounded-lg hover:bg-indigo-200 transition font-bold text-base">
+            <button
+              class="text-white text-center mt-5 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
               Add to Cart >
             </button>
           </div>
+
         </div>
-      </div>
-      </div>
+      </main>
   </section>
-  <!-- بخش چهارم بخش سبزرنگ -->
-    <section class="bg-[#0A490A]">
-      <div class="container mx-auto px-4 py-8 md:py-12">
-        <!-- عنوان و دکمه -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-5 md:mb-12">
-          <h1 class="text-white text-3xl md:text-4xl font-bold text-center sm:text-right">Love our Categories</h1>
-          <button class="text-[#0A490A] bg-[#FFC107] px-6 py-2 rounded-3xl hover:bg-indigo-200 transition font-bold whitespace-nowrap">
-            Show more >
-          </button>
-        </div>
-    
-        <!-- منوی دسته‌بندی‌ها -->
-        <header class="overflow-x-auto pb-2">
-          <div class="container mx-auto flex items-center space-x-4 md:space-x-6 min-w-max">
-            <h1 class="text-[#FFC107] font-bold text-3xl whitespace-nowrap">All Categories</h1>
-            <h2 class="text-white font-bold whitespace-nowrap">Vegetables</h2>
-            <h3 class="text-white font-bold whitespace-nowrap">Fruits</h3>
-            <h4 class="text-white font-bold whitespace-nowrap">Juices</h4>
-            <h5 class="text-white font-bold whitespace-nowrap">Bakers</h5>
-          </div>
-        </header>
-    
-      
-        <main class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-            
-              <!-- بخش چهارم قسمت اول سيب ها -->
-            <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md ">
-              <div class="flex justify-between items-start mt-3">
-                <img class="w-80 h-full ms-12 sm:ms-5" src="/assets/images/apple1.png" alt="">
-                <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_white.png" alt="">
-              </div>
-              <p class="text-white mt-4 lg:mt-20 text-center lg:text-left  ">Fruits</p>
-              <h5 class="text-lg font-bold text-white text-center lg:text-left ">Pomme</h5>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <img src="/assets/images/Frame 18.png" alt="Rating">
-                <p class="text-white ml-2">(1)</p>
-              </div>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <p class="text-xl text-white">175.00 DA</p>
-                <p class="text-xl text-white line-through ml-2">240.00 DA</p>
-              </div>
-              <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
-                <div class="w-full lg:w-1/2">
-                  <label for="size" class="block text-sm font-medium text-white">Size:</label>
-                  <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                    <option>1 Kg</option>
-                  </select>
-                </div>
-                <div class="w-full lg:w-1/4">
-                  <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
-                  <input type="number" id="quantity" min="1" value="1" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                </div>
-              </div>
-              <button class="text-white text-center mt-5 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
-                Add to Cart >
-              </button>
-            </div>
-       <!-- بخش چهارم بخش نوشيدنی بروکلی -->
-            <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md">
-              <div class="flex justify-between items-start">
-                <img class="w-80 h-full  sm:ms-15" src="/assets/images/brokli.png" alt="">
-                <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_yellow.png" alt="">
-              </div>
-              <p class="text-white mt-4 lg:mt-20 text-center lg:text-left">Juices</p>
-              <h4 class="text-lg font-bold text-white text-center lg:text-left">Brocoli Shake</h4>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <img src="/assets/images/Frame 18.png" alt="Rating">
-                <p class="text-white ml-2">(1)</p>
-              </div>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <p class="text-xl text-white">175.00 DA</p>
-                <p class="text-xl text-white line-through ml-2">240.00 DA</p>
-              </div>
-              <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
-                <div class="w-full lg:w-1/2">
-                  <label for="size" class="block text-sm font-medium text-white">Size:</label>
-                  <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                    <option>1 Liter</option>
-                  </select>
-                </div>
-                <div class="w-full lg:w-1/4">
-                  <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
-                  <input type="number" id="quantity" min="1" value="1" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                </div>
-              </div>
-              <button class="text-white text-center mt-6 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
-                Add to Cart >
-              </button>
-            </div>
-    
-              <!-- بخش چهارم قسمت سوم بخش دونات -->
-            <div class="bg-[#0A490A] p-4 border border-white rounded shadow-md">
-              <div class="flex justify-between items-start">
-                <img class="w-80 h-full ms-12 sm:ms-10" src="/assets/images/donutes.png" alt="">
-                <img class="w-6 h-6 mt-3" src="/assets/images/🦆 icon _hurt_white.png" alt="">
-              </div>
-               <p class="text-white mt-12  text-center lg:text-left">Bakers</p>
-          <h2 class="text-lg font-bold text-white  text-center lg:text-left">Donuts</h2>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <img src="/assets/images/Frame 18.png" alt="Rating">
-                <p class="text-white ml-2">(1)</p>
-              </div>
-              <div class="flex justify-center lg:justify-start items-center mt-2">
-                <p class="text-xl text-white">175.00 DA</p>
-                <p class="text-xl text-white line-through ml-2">240.00 DA</p>
-              </div>
-              <div class="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
-                <div class="w-full lg:w-1/2">
-                  <label for="size" class="block text-sm font-medium text-white">Size:</label>
-                  <select id="size" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                    <option>1 pics</option>
-                  </select>
-                </div>
-                <div class="w-full lg:w-1/4">
-                  <label for="quantity" class="block text-sm font-medium text-white">Quantity</label>
-                  <input type="number" id="quantity" min="1" value="1" class="text-white mt-1 block w-full border-black border-2 rounded-md shadow-sm">
-                </div>
-              </div>
-              <button class="text-white text-center mt-5 bg-[#FFC107] w-full py-2 rounded-lg hover:bg-indigo-200 transition font-bold">
-                Add to Cart >
-              </button>
-            </div>
-            
-          </div>
-        </main>
-    </section>
   </section>
   <!-- بخش پنجم قسمت كدو -->
   <section class="mt-15">
@@ -466,15 +504,15 @@
       </div>
     </div>
     <!-- قسمت عكس ها -->
-     <!-- بخش مربوط به كدو -->
-     <div class="container mx-auto px-4 py-8">
+    <!-- بخش مربوط به كدو -->
+    <div class="container mx-auto px-4 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-15">
         <div class="rounded">
           <div class="relative group">
             <div class="bg-orange-500 rounded-lg p-4 relative mt-2 ">
-              <img src="/assets/images/pexels-miguel-á-padriñán-673073-removebg-preview 1.png" 
-                   class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain" 
-                   alt="pumpkin">
+              <img src="/assets/images/pexels-miguel-á-padriñán-673073-removebg-preview 1.png"
+                class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain"
+                alt="pumpkin">
               <div class="mt-6 space-y-3">
                 <p class="text-base text-[#0A490A] font-bold">Juices</p>
                 <h3 class="text-2xl text-[#0A490A] font-bold">Brocoli Shake</h3>
@@ -483,20 +521,21 @@
                   <span class="ml-2">(1)</span>
                 </div>
                 <p class="text-base text-white font-bold">175.00 DA</p>
-                <button class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
+                <button
+                  class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
                   Add to cart >
                 </button>
               </div>
             </div>
           </div>
         </div>
-    <!-- قسمت موز -->
+        <!-- قسمت موز -->
         <div class="rounded">
           <div class="relative group">
             <div class="bg-[#FCC601] rounded-lg p-4 relative mt-2">
-              <img src="/assets/images/benana.png" 
-                   class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain" 
-                   alt="pumpkin">
+              <img src="/assets/images/benana.png"
+                class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain"
+                alt="pumpkin">
               <div class="mt-6 space-y-3">
                 <p class="text-base text-[#0A490A] font-bold">Juices</p>
                 <h3 class="text-2xl text-[#0A490A] font-bold">Brocoli Shake</h3>
@@ -505,21 +544,22 @@
                   <span class="ml-2">(1)</span>
                 </div>
                 <p class="text-base text-white font-bold">175.00 DA</p>
-                <button class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
+                <button
+                  class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
                   Add to cart >
                 </button>
               </div>
             </div>
           </div>
         </div>
-    
-       <!-- قسمت آووكادو -->
+
+        <!-- قسمت آووكادو -->
         <div class="rounded">
           <div class="relative group">
             <div class="bg-[#327613] rounded-lg p-4 relative mt-2">
-              <img src="/assets/images/avocado.png" 
-                   class="absolute right-0 top-0 mt-[-4rem] mr-23 transform translate-x-1/2 h-55 min-w-56 object-contain" 
-                   alt="pumpkin">
+              <img src="/assets/images/avocado.png"
+                class="absolute right-0 top-0 mt-[-4rem] mr-23 transform translate-x-1/2 h-55 min-w-56 object-contain"
+                alt="pumpkin">
               <div class="mt-6 space-y-3">
                 <p class="text-base text-[#0A490A] font-bold">Juices</p>
                 <h3 class="text-2xl text-[#0A490A] font-bold">Brocoli Shake</h3>
@@ -528,21 +568,22 @@
                   <span class="ml-2">(1)</span>
                 </div>
                 <p class="text-base text-white font-bold">175.00 DA</p>
-                <button class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
+                <button
+                  class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
                   Add to cart >
                 </button>
               </div>
             </div>
           </div>
         </div>
-    
-       <!-- قسمت دراگون -->
+
+        <!-- قسمت دراگون -->
         <div class="rounded">
           <div class="relative group">
             <div class="bg-[#EF174B] rounded-lg p-4 relative mt-2">
-              <img src="/assets/images/dragon.png" 
-                   class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain" 
-                   alt="pumpkin">
+              <img src="/assets/images/dragon.png"
+                class="absolute right-0 top-0 mt-[-4rem] mr-10 transform translate-x-1/2 h-55 min-w-56 object-contain"
+                alt="pumpkin">
               <div class="mt-6 space-y-3">
                 <p class="text-base text-[#0A490A] font-bold">Juices</p>
                 <h3 class="text-2xl text-[#0A490A] font-bold">Brocoli Shake</h3>
@@ -551,7 +592,8 @@
                   <span class="ml-2">(1)</span>
                 </div>
                 <p class="text-base text-white font-bold">175.00 DA</p>
-                <button class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
+                <button
+                  class="bg-[#FFC107] border-black border-2 text-white py-1 px-4 rounded-md text-sm font-medium hover:bg-yellow-500 transition">
                   Add to cart >
                 </button>
               </div>
@@ -560,64 +602,252 @@
         </div>
       </div>
     </div>
-    
-     
+
+
 
   </section>
   <section>
 
 
     <!-- بخش ششم دوتاكادركنارهم -->
-     <div class="container mx-auto px-4 py-8 mt-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"> 
-        
+    <div class="container mx-auto px-4 py-8 mt-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
         <!--  بخش اول (توت فرنگی) -->
-        <div class="relative group h-96"> 
-          <img class="w-full h-full object-cover  filter blur-[2px]" 
-               src="/assets/images/strawberries.png" 
-               alt="توت فرنگی">
-          <div class="absolute inset-0 bg-black/30 "></div> 
+        <div class="relative group h-96">
+          <img class="w-full h-full object-cover  filter blur-[2px]" src="/assets/images/strawberries.png"
+            alt="توت فرنگی">
+          <div class="absolute inset-0 bg-black/30 "></div>
           <div class="absolute inset-0 flex flex-col justify-end p-8">
-            <h3 class="text-white text-4xl font-bold mb-4">Fruits  § <br>
-              Vegetables </h3> 
-            <p class="text-white font-bold text-xl mb-6"> 
+            <h3 class="text-white text-4xl font-bold mb-4">Fruits § <br>
+              Vegetables </h3>
+            <p class="text-white font-bold text-xl mb-6">
               These superfoods are packed with vital nutrients, including vitamins
               and minerals that can help keep you health. Plus, they’re easy to
-               enjoy-just add water and let the magic happen!
+              enjoy-just add water and let the magic happen!
             </p>
-            <button class="text-[#0A490A] bg-[#FFC107] w-48 py-2 rounded-lg hover:bg-yellow-300 transition font-bold text-lg">
+            <button
+              class="text-[#0A490A] bg-[#FFC107] w-48 py-2 rounded-lg hover:bg-yellow-300 transition font-bold text-lg">
               View More >
             </button>
           </div>
         </div>
-    
+
         <!-- بخش دوم (پرتقال) -->
-        <div class="relative group h-96"> 
-          <img class="w-full h-full object-cover rounded-2xl filter blur-[2px]" 
-               src="/assets/images/orange.png" 
-               alt="پرتقال">
+        <div class="relative group h-96">
+          <img class="w-full h-full object-cover rounded-2xl filter blur-[2px]" src="/assets/images/orange.png"
+            alt="پرتقال">
           <div class="absolute inset-0 bg-black/30 "></div>
           <div class="absolute inset-0 flex flex-col justify-end p-8 ">
-            <h3 class="text-white text-4xl font-bold mb-4">Fruits  § <br>
-              Vegetables </h3> <!-- بزرگتر کردن فونت -->
-            <p class="text-white font-bold text-xl mb-6"> <!-- بزرگتر کردن متن -->
+            <h3 class="text-white text-4xl font-bold mb-4">Fruits § <br>
+              Vegetables </h3>
+            <p class="text-white font-bold text-xl mb-6">
               These superfoods are packed with vital nutrients, including vitamins
               and minerals that can help keep you health. Plus, they’re easy to
-               enjoy-just add water and let the magic happen!
+              enjoy-just add water and let the magic happen!
             </p>
-            <button class="text-[#0A490A] bg-[#FFC107] w-48 py-2 rounded-lg hover:bg-yellow-300 transition font-bold text-lg">
+            <button
+              class="text-[#0A490A] bg-[#FFC107] w-48 py-2 rounded-lg hover:bg-yellow-300 transition font-bold text-lg">
               View More >
             </button>
           </div>
         </div>
-    
+
       </div>
     </div>
-       
-  <section>
+    <!-- بخش هفتم -->
+    <section>
+      <!-- عنوان  -->
+      <div class="px-6 py-8  mt-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-start justify-between gap-8">
+          <div class="flex flex-col order-2 md:order-1 w-full md:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#0A490A] mb-6">Categories</h1>
+
+            <!-- کادرها در سمت راست -->
+            <p class="text-[#0A490A] font-bold mt-2">
+              These superfoods are packed with vital nutrients, including
+              vitamins,<br>
+              minerals that can help keep you health. Plus, they're easy to <br>
+              enjoy-just add water and let the magic happen!
+            </p>
+            <button
+              class="text-[#0A490A] mt-10 rounded-lg bg-[#FFC107] shadow-md font-bold hover:bg-yellow-500 transition duration-300 w-40 h-10">
+              Show more >
+            </button>
+          </div>
+
+          <!-- قسمت راست پروژه -->
+          <div class="order-1 md:order-2 w-full md:w-1/2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- اولين كارت -->
+              <div class="bg-white rounded-lg p-6 shadow-md  border-black border-2">
+                <div class="space-y-3">
+                  <div class="flex items-center">
+                    <div>
+                      <img src="/assets/images/str.png" alt="">
+                    </div>
+                    <span class="ml-2 text-[#0A490A]">4.5/5</span>
+                  </div>
+                  <h6 class="font-bold text-[#0A490A] text-2xl ">Excellent Service</h6>
+                  <span class="text-center  text-[#0A490A]">These superfoods are packed with <br> vital nutrients, including vitamins <br>
+                    and minerals that can help keep <br> you health. Plus, they’re easy to <br>
+                     enjoy-just add water and let the <br> magic happen!</span>
+                     <div class="flex items-center">
+                      <div class="mt-5">
+                        <img src="/assets/images/mustapha.png" alt="">
+                      </div>
+                      <span class="ml-5 text-[#0A490A] font-bold mt-3">Mustapha kadi<br>
+                        <p class="  text-[#0A490A] font-bold"> Client</p>
+                     </span>
+                      </div>
+                </div>
+              </div>
+
+              <!-- كارت دوم -->
+              <div class="bg-white rounded-lg p-6 shadow-md  border-black border-2">
+                <div class="space-y-3">
+                  <div class="flex items-center">
+                    <div>
+                      <img src="/assets/images/str.png" alt="">
+                    </div>
+                    <span class="ml-2 text-[#0A490A]">4.5/5</span>
+                  </div>
+                  <h6 class="font-bold text-[#0A490A] text-2xl ">Excellent Service</h6>
+                  <span class="text-center  text-[#0A490A]">These superfoods are packed with <br> vital nutrients, including vitamins <br>
+                    and minerals that can help keep <br> you health. Plus, they’re easy to <br>
+                     enjoy-just add water and let the <br> magic happen!</span>
+                     <div class="flex items-center">
+                     <div class="mt-5">
+                       <img src="/assets/images/mustapha2.png" alt="">
+                     </div>
+                     <span class="ml-5 text-[#0A490A] font-bold mt-3">Mustapha kadi<br>
+                      <p class="  text-[#0A490A] font-bold"> Client</p>
+                   </span>
+  
+                   </div>
+                </div>
+              </div>
+    </section>
+    <!-- بخش هشتم -->
+    <section class="py-32">
     
 
-  </section>
+      <div class=" bg-white p-4 mt-28 ">
+        <h1 class="text-center font-bold text-6xl text-[#0A490A] ">Blog § Articles</h1>
+        <h4 class="text-center text-[#0A490A] mt-4 font-bold">These superfoods are packed with vital nutrients, including
+          vitamins and minerals that can
+          <br> help keep you health. Plus, they’re easy to enjoy-just add water and let the magic happen!
+        </h4>
+     
+       
+              
+              
+              
+            </section>
+            <section class=" bg-[#0A490A]">
+    
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col md:flex-row gap-10 justify-center items-stretch mt-[-10rem]"> <!-- جهت افقی در دسکتاپ -->
+      
+       <!--  کارت 1 (آناناس)-->
+      <div class="flex-1 max-w-md bg-white rounded-lg overflow-hidden shadow-md">
+        <div class="relative">
+          <button class="absolute left-2 top-2 bg-[#FFC107] hover:bg-white text-[#0A490A] font-bold py-1 px-6 rounded-full z-10 transition-all">
+            Food
+          </button>
+          <img src="/assets/images/annans.png" alt="آناناس" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class=" text-left ms-4 text-3xl font-bold mb-2  text-[#0A490A]">Fruit is an Essential <br>
+            food for our life 
+             Plan</h3>
+             <p class=" text-[#0A490A] text-left ms-4  mb-4">These superfoods are packed <br> with vital nutrients, including  <br>vitamins and minerals that can <br> help keep you health..</p>
+           
+          <button class="bg-[#FFC107] hover:bg-yellow-300 ms-3 text-[#0A490A] font-medium py-2 px-4 rounded transition-colors">
+            Read more →
+          </button>
+        </div>
+      </div>
   
+      <!--  کارت ۲ (بلوبری)-->
+      <div class="flex-1 max-w-md bg-white rounded-lg overflow-hidden shadow-md">
+        <div class="relative">
+          <button class="absolute left-2 top-2 bg-[#FFC107] hover:bg-white text-[#0A490A] font-bold py-1 px-6 rounded-full z-10 transition-all">
+            Food
+          </button>
+          <img src="/assets/images/boloubery.png" alt="بلوبری" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h4 class=" text-left ms-5 text-3xl font-bold mb-2  text-[#0A490A]">Fruit is an Essential <br>
+            food for our life 
+             Plan</h4>
+             <p class=" text-[#0A490A] text-left ms-6  mb-4">These superfoods are packed <br> with vital nutrients, including  <br>vitamins and minerals that can <br> help keep you health..</p>
+          <button class="bg-[#FFC107] hover:bg-yellow-300 ms-6 text-[#0A490A] font-medium py-2 px-4 rounded transition-colors">
+            Read more →
+          </button>
+        </div>
+      </div>
+  
+       <!--  کارت سوم (قارچ وگوجه)-->
+      <div class="flex-1 max-w-md bg-white rounded-lg overflow-hidden shadow-md">
+        <div class="relative">
+          <button class="absolute left-2 top-2 bg-[#FFC107] hover:bg-white text-[#0A490A] font-bold py-1 px-6 rounded-full z-10 transition-all">
+            Food
+          </button>
+          <img src="/assets/images/mushrom.png" alt="قارچ" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h4 class=" text-left ms-5 text-3xl font-bold mb-2  text-[#0A490A]">Heavy Weigt Diet <br>
+            Plan 
+             </h4>
+             <p class=" text-[#0A490A] text-left ms-6  mb-4">These superfoods are packed <br> with vital nutrients, including  <br>vitamins and minerals that can <br> help keep you health..</p>
+          <button class="bg-[#FFC107] hover:bg-yellow-300 ms-6 text-[#0A490A] font-medium py-2 px-4 rounded transition-colors">
+            Read more →
+          </button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!-- بخش انتهاپروژه -->
+    <footer>
+      <div class=" bg-[#0A490A] p-6 md:p-8">
+        <div class="flex flex-col space-y-4 md:flex-row md:space-x-6 md:justify-center">
+          <div class="bg-[#0A490A] p-2  overflow-hidden">
+            <h1 class=" text-left text-[#FFC107] text-4xl  font-bold">Foodmart </h1>
+            <p class=" text-white text-left mt-2">These superfoods are packed with vital nutrients,<br> including vitamins
+              and minerals
+              that
+              can help keep you <br> health..</p>
+            <div class="text-white font-bold  whitespace-nowrap mt-38 md:mr-40"> 2024, All Rights Reserved </div>
+          </div>
+          <div class="bg-[#0A490A] p-2 ml-10">
+            <h1 class="font-bold text-2xl text-left  text-white">Navigation</h1>
+            <p class="text-white text-left mt-2">Search <br>Cart <br>Categories <br>Wishlist </p>
+          </div>
+          <div class="bg-[#0A490A] p-2 ml-10">
+            <h1 class="font-bold  text-white text-2xl ">About Us</h1>
+            <p class="text-white mt-2">About us<br>Contact us<br> Faq’s<br> Delivery <br>Policy</p>
+          </div>
+          <div class="bg-[#0A490A] p-2 ml-8 ">
+            <h4 class="font-bold  text-white text-2xl"> Subscribe newsletter and get 20% off</h4>
+            <p class=" text-white mt-2">These superfoods are packed with vital nutrients, <br> including vitamins .</p>
+           <!-- بخش ایمیل درپایین صفحه -->
+                <div class="flex items-center gap-0 mt-5"> 
+                  <input
+                    class="shadow appearance-none border rounded p-3 text-white leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out flex-1 rounded-r-none" 
+                    id="emailaddress" 
+                    type="email" 
+                    placeholder="Enter email address....."
+                  >
+                  <button
+                    class="bg-[#FFC107] w-10 h-11 flex items-center justify-center text-lg font-bold hover:scale-110 transition-transform rounded-l-none border-2 border-amber-100" >
+                  
+                    →
+                  </button>
+                </div>
+            </div>
+    </footer>
+  </section>
   <!-- ادرس فيگما -->
   <!-- https://www.figma.com/design/4rAkS4H5rcdy64f23AtkdL/Fruits-and-vegetables-site-Free-(Community)?node-id=6-2&amp;t=nDulYSXCAnSAUoIx-0 -->
